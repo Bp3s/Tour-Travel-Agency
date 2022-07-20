@@ -262,6 +262,7 @@ header .search-bar-container label:hover{
     justify-content: center;
     flex-flow: column;
     position: relative;
+    z-index: 1;
 }
 .home .content{
     text-align: center;
