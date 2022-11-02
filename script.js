@@ -110,30 +110,31 @@ loadMoreBtn.style.display = 'none';
 
 
 ///color change theme
-document.querySelector('.home .color-switcher .switcher-btn').onclick = () =>{
-document.querySelector('.home .color-switcher').classList.toggle('active');
-};
-let themeButtons = document.querySelectorAll('.theme-buttons');
-themeButtons.forEach(color =>{
-color.addEventListener('click', () =>{
-let dataColor = color.getAttribute('data-color');
-document.querySelector(':root').style.setProperty('--main-color',dataColor);
 
-});
-});
+// document.querySelector('.home .color-switcher .switcher-btn').onclick = () =>{
+// document.querySelector('.home .color-switcher').classList.toggle('active');
+// };
+// let themeButtons = document.querySelectorAll('.theme-buttons');
+// themeButtons.forEach(color =>{
+// color.addEventListener('click', () =>{
+// let dataColor = color.getAttribute('data-color');
+// document.querySelector(':root').style.setProperty('--main-color',dataColor);
+
+// });
+// });
 
 //dark mode theme
-let themeToggler = document.querySelector('.theme-toggler');
-themeToggler.onclick = () =>{
-themeToggler.classList.toggle('active');
+// let themeToggler = document.querySelector('.theme-toggler');
+// themeToggler.onclick = () =>{
+// themeToggler.classList.toggle('active');
 
-if(themeToggler.classList.contains('active')){
-document.body.classList.add('active');
-}else{
-document.body.classList.remove('active');
-}
+// if(themeToggler.classList.contains('active')){
+// document.body.classList.add('active');
+// }else{
+// document.body.classList.remove('active');
+// }
 
-}
+// }
 
 //AOS
 
